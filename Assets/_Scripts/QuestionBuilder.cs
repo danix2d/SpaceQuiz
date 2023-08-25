@@ -27,6 +27,7 @@ public class QuestionBuilder : MonoBehaviour
         for (int j = 0; j < buttons.Count; j++)
         {
             Answer answer = buttons[j].GetComponent<Answer>();
+            answer.isCorrectAnswer = false;
             answer.text.text = question.answers[j];
             if(j == 0)
             {
